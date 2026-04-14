@@ -61,7 +61,7 @@ See the [preprocessing README](https://github.com/nyu-vis-krueger-group/BioSET_P
 
 #### Surface Extraction (optional)
 
-For 3D surface mesh extraction used in label rendering:
+For 3D surface mesh extraction:
 
 ```bash
 git clone https://github.com/nyu-vis-krueger-group/Isosurface_Based_Segmentation.git
