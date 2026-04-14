@@ -12,7 +12,7 @@
 
 | Repository | Description |
 |---|---|
-| [BioSET Visualizer](https://github.com/nyu-vis-krueger-group/BioSET_Visualizer.git) | Trame/VTK-based interactive 3D viewer with multi-resolution multi-volume rendering, surface overlays, co-localization heatmaps, and an AI assistant |
+| [BioSET Visualizer](https://github.com/nyu-vis-krueger-group/BioSET_Visualizer.git) | Trame/VTK-based interactive 3D viewer with volume rendering, surface overlays, and co-localization heatmaps |
 | [BioSET Preprocessing](https://github.com/nyu-vis-krueger-group/BioSET_Preprocessing.git) | GPU-accelerated pipeline for thresholding, segmentation, multi-radius dilation, and overlap mining |
 | [Isosurface-Based Segmentation](https://github.com/nyu-vis-krueger-group/Isosurface_Based_Segmentation.git) | Optional surface mesh extraction for 3D label rendering |
 
@@ -28,19 +28,7 @@ Preprocessed outputs for the melanoma in-situ dataset (BiomedVis Challenge 2025)
 
 ## Quick Start
 
-### 1. Preprocessing
-
-```bash
-git clone https://github.com/nyu-vis-krueger-group/BioSET_Preprocessing.git
-cd BioSET_Preprocessing
-conda create -n bioset python=3.11
-conda activate bioset
-pip install -e .
-```
-
-See the [preprocessing README](https://github.com/nyu-vis-krueger-group/BioSET_Preprocessing#quick-start) for pipeline configuration and usage. Alternatively, download the preprocessed `.bioset` database and meshes above.
-
-### 2. Visualizer
+### 1. Visualizer
 
 ```bash
 git clone --recurse-submodules https://github.com/nyu-vis-krueger-group/BioSET_Visualizer.git
@@ -57,11 +45,29 @@ Configure the zarr path, channel indices, and voxel spacing in `app.py`, then ru
 bioset
 ```
 
-This starts a local server and opens the viewer at [http://localhost:8080/index.html](http://localhost:8080/index.html).
+This starts a local server and opens the viewer at [http://localhost:8080/index.html](http://localhost:8080/index.html). See the [visualizer README](https://github.com/nyu-vis-krueger-group/BioSET_Visualizer#readme) for remote server setup and additional options.
 
-### 3. AI Assistant (optional)
+### 2. Preprocessing
 
-BioSET includes an AI assistant powered by [Biomni](https://github.com/snap-stanford/Biomni) for biological labeling and free-form marker queries. It requires a separate conda environment and an Anthropic API key. See the [visualizer README](https://github.com/nyu-vis-krueger-group/BioSET_Visualizer#ai-assistant-biomni) for setup instructions.
+```bash
+git clone https://github.com/nyu-vis-krueger-group/BioSET_Preprocessing.git
+cd BioSET_Preprocessing
+conda create -n bioset python=3.11
+conda activate bioset
+pip install -e .
+```
+
+See the [preprocessing README](https://github.com/nyu-vis-krueger-group/BioSET_Preprocessing#quick-start) for pipeline configuration and usage. Alternatively, download the preprocessed `.bioset` database and meshes from the links above.
+
+#### Surface Extraction (optional)
+
+For 3D surface mesh extraction used in label rendering:
+
+```bash
+git clone https://github.com/nyu-vis-krueger-group/Isosurface_Based_Segmentation.git
+```
+
+See the [repository README](https://github.com/nyu-vis-krueger-group/Isosurface_Based_Segmentation#readme) for setup and usage.
 
 ## License
 
