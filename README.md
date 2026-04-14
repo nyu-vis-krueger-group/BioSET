@@ -18,11 +18,11 @@
 
 ## Preprocessed Data
 
-Preprocessed outputs for the melanoma in-situ dataset (BiomedVis Challenge 2025):
+Preprocessed outputs for the [melanoma in-situ dataset](https://www.nature.com/articles/s41592-025-02824-x):
 
 | Resource | Link |
 |---|---|
-| Data Zarr | [s3://lsp-public-data/.../Dataset1-LSP13626-melanoma-in-situ/0](https://lsp-public-data.s3.amazonaws.com/biomedvis-challenge-2025/Dataset1-LSP13626-melanoma-in-situ/0) |
+| Data Zarr | [S3 Store](https://lsp-public-data.s3.amazonaws.com/biomedvis-challenge-2025/Dataset1-LSP13626-melanoma-in-situ/0) |
 | Co-localization database (`.bioset`) | [Google Drive](https://drive.google.com/file/d/1M4YQ218duZPm3Ga_yuKmu7eDDm5269tb/view?usp=drive_link) |
 | Extracted meshes | [Google Drive](https://drive.google.com/file/d/1cLf7QgNUdTYi_QxCaCFH1K03scw-eJJZ/view?usp=drive_link) |
 
