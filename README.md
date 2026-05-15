@@ -71,4 +71,4 @@ See the [repository README](https://github.com/nyu-vis-krueger-group/Isosurface_
 
 ## License
 
-MIT License
+[MIT License](https://github.com/nyu-vis-krueger-group/BioSET/blob/main/LICENSE)
