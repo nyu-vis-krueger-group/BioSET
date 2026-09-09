@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Chahat"
+  given-names: "Kalsi"
+- family-names: "Hossein"
+  given-names: "Fathollahian"
+- family-names: "Luca"
+  given-names: "Reichmann"
+- family-names: "Sophia"
+  given-names: "Gaupp"
+- family-names: "Yuancheng"
+  given-names: "Shen"
+- family-names: "Michael"
+  given-names: "Krone"
+- family-names: "Saeed"
+  given-names: "Boorboor"
+- family-names: "Robert"
+  given-names: "Krüger"
+title: "BioSET"
+version: 1.0.0
+doi: 
+date-released: 
+url: "https://github.com/nyu-vis-krueger-group/BioSET/"
