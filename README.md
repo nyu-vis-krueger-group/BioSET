@@ -12,19 +12,12 @@
 
 | Repository | Description |
 |---|---|
-| [BioSET Visualizer](https://github.com/nyu-vis-krueger-group/BioSET_Visualizer.git) | Trame/VTK-based interactive 3D viewer with volume rendering, surface overlays, and co-localization heatmaps |
-| [BioSET Preprocessing](https://github.com/nyu-vis-krueger-group/BioSET_Preprocessing.git) | GPU-accelerated pipeline for thresholding, segmentation, multi-radius dilation, and overlap mining |
-| [Isosurface-Based Segmentation](https://github.com/nyu-vis-krueger-group/Isosurface_Based_Segmentation.git) | Optional surface mesh extraction for 3D label rendering |
+| [BioSET Visualizer](https://github.com/nyu-vis-krueger-group/BioSET_Visualizer) | Interactive 3D viewer with volume rendering, surface rendering, and co-localization plots and spatial guidance mechanisms. |
+| [BioSET Preprocessing](https://github.com/nyu-vis-krueger-group/BioSET_Preprocessing.git) | GPU-accelerated pipeline for denoising, dilating and finding biomarker co-localizations, as well as for extracting surfaces. |
 
 ## Preprocessed Data
 
-Preprocessed outputs for the [melanoma in-situ dataset](https://www.nature.com/articles/s41592-025-02824-x):
-
-| Resource | Link |
-|---|---|
-| Data Zarr | [S3 Store](https://lsp-public-data.s3.amazonaws.com/biomedvis-challenge-2025/Dataset1-LSP13626-melanoma-in-situ/0) |
-| Co-localization database (`.bioset`) | [Google Drive](https://drive.google.com/file/d/1M4YQ218duZPm3Ga_yuKmu7eDDm5269tb/view?usp=drive_link) |
-| Extracted meshes | [Google Drive](https://drive.google.com/file/d/1cLf7QgNUdTYi_QxCaCFH1K03scw-eJJZ/view?usp=drive_link) |
+Please contact the authors for access to preprocessed data. 
 
 ## Quick Start
 
@@ -58,16 +51,6 @@ pip install -e .
 ```
 
 See the [preprocessing README](https://github.com/nyu-vis-krueger-group/BioSET_Preprocessing#quick-start) for pipeline configuration and usage. Alternatively, download the preprocessed `.bioset` database and meshes from the links above.
-
-#### Surface Extraction (optional)
-
-For 3D surface mesh extraction:
-
-```bash
-git clone https://github.com/nyu-vis-krueger-group/Isosurface_Based_Segmentation.git
-```
-
-See the [repository README](https://github.com/nyu-vis-krueger-group/Isosurface_Based_Segmentation#readme) for setup and usage.
 
 ## License
 
